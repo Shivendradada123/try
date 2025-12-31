@@ -1,0 +1,170 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* ===== COMMON CONTAINER ===== */
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+/* ===== POPUP ===== */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 999;
+}
+
+.popup-box {
+  width: 100%;
+  max-width: 360px;
+  background: linear-gradient(160deg, #111, #1f1f1f);
+  border-radius: 22px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,255,213,0.25);
+}
+
+.popup-box h2 {
+  font-size: 21px;
+  margin-bottom: 6px;
+  color: #00ffd5;
+}
+
+.popup-box p {
+  font-size: 13px;
+  color: #cfcfcf;
+  margin-bottom: 14px;
+}
+
+/* TG LINKS */
+.popup-box a {
+  display: block;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #00ffd5;
+  background: #000;
+  border: 1px solid #00ffd5;
+  transition: transform 0.2s ease, background 0.2s;
+}
+
+.popup-box a:active {
+  transform: scale(0.96);
+  background: #00ffd5;
+  color: #000;
+}
+
+/* JOIN BUTTON */
+.popup-box button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 15px;
+  border-radius: 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  color: #fff;
+}
+
+/* ===== FORM ===== */
+.form-box {
+  width: 100%;
+  max-width: 380px;
+  background: linear-gradient(160deg, #0b0b0b, #1a1a1a);
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 0 45px rgba(0,198,255,0.25);
+}
+
+.form-box h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #00ffd5;
+}
+
+.form-box h3 {
+  text-align: center;
+  font-size: 14px;
+  margin: 8px 0 18px;
+  color: gold;
+  letter-spacing: 0.5px;
+}
+
+/* INPUTS */
+form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #00ffd5;
+}
+
+form input::placeholder {
+  color: #9e9e9e;
+}
+
+form input[type="file"] {
+  padding: 12px;
+  font-size: 13px;
+}
+
+/* SUBMIT */
+form button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 6px;
+  border-radius: 18px;
+  border: none;
+  font-size: 17px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00ffd5, #00c6ff);
+  color: #000;
+}
+
+/* ===== SUCCESS ===== */
+.success {
+  width: 100%;
+  max-width: 360px;
+  background: linear-gradient(160deg, #11998e, #38ef7d);
+  border-radius: 26px;
+  padding: 36px 24px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 0 40px rgba(56,239,125,0.5);
+}
+
+.success h2 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.success p {
+  font-size: 15px;
+  font-weight: 600;
+}
